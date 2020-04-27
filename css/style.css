@@ -51,8 +51,12 @@ body {
 	height: 19px;
 	position: absolute;
 	left: -34px;
-	background-image: url(img/check_icon_346.png);
+	background-image: url(../img/check_icon_346.png);
 	background-size: cover;
+}
+
+.main-header-list-item:first-child {
+	margin: 0;
 }
 
 .main-header-img {
@@ -78,10 +82,15 @@ body {
 }
 
 .main-text {
-	font-size: 16px;
-	line-height: 24px;
+	font-size: 15px;
+    line-height: 22px;
 	font-weight: 400;
 	color: #333333;
+	margin: 0 0 20px 0;
+}
+
+.main-text:last-child {
+	margin: 0;
 }
 
 .about-video {
@@ -120,6 +129,7 @@ body {
 	line-height: 24px;
 	font-weight: 400;
 	color: #333333;
+	margin: 0;
 }
 
 .dignity-list-item {
@@ -138,10 +148,17 @@ body {
     position: absolute;
     left: -38px;
     top: 4px;
-    background-image: url(img/layer_2_30.png);
+    background-image: url(../img/layer_2_30.png);
     background-color: #445161;
     background-repeat: no-repeat;
     background-position: 6px;
+}
+
+figure {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
 }
 
 .screenshots-img {
@@ -159,6 +176,7 @@ body {
 
 .screenshots-left {
 	float: left;
+	margin: 0 0 20px 0;
 }
 
 .screenshots-right {
