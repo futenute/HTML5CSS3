@@ -201,3 +201,32 @@ figure {
 	font-weight: 400;
 	color: #445161;
 }
+
+.reviews {
+	background-color: #f5f5f5;
+}
+
+.reviews-item-container {
+	display: flex;
+	flex-wrap: wrap;
+
+}
+
+.reviews-item {
+	width: 50%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.reviews-img {
+	display: block;
+	width: 75px;
+	height: 75px;
+	background-color: #445161;
+	border-radius: 50%;
+}
+
+.reviews-text-author {
+	width: 483px;
+}
