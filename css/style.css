@@ -264,7 +264,7 @@ figure {
 	font-weight: 400;
 	font-style: italic;
 	color: #333333;
-	padding-bottom: 10px;
+	margin: 0 0 10px 0;
 }
 
 .reviews-author {
@@ -293,7 +293,7 @@ figure {
 	display: flex;
     justify-content: center;
     align-items: center;
-	height: 50px;
+	min-height: 50px;
 	width: 100%;
 	font-size: 24px;
 	font-weight: 400;
@@ -305,7 +305,7 @@ figure {
 	display: flex;
     justify-content: center;
     align-items: center;
-	height: 70px;
+	min-height: 70px;
 	width: 100%;
 	font-size: 40px;
 	line-height: 30px;
@@ -329,11 +329,19 @@ figure {
 	font-size: 18px;
 	font-weight: 700;
 	color: #445161;
+	text-transform: uppercase;
+	border: 1px solid #445162;
 }
 
 .buy-it-btn:hover {
 	cursor: pointer;
-	background-color: #ebebeb;
+	background-color: #d6d6d6;
+}
+
+.buy-it-btn:active {
+	background-color: #fff;
+	border-color: #719ECE;
+    box-shadow: 0 0 10px #719ECE;
 }
 
 .contacts-container {
@@ -370,6 +378,12 @@ input[type="email"] {
 	color: #445162;
 }
 
+input[type="text"]:focus,
+input[type="email"]:focus {
+	border-color: #719ECE;
+    box-shadow: 0 0 10px #719ECE;
+}
+
 textarea {
 	font-family: arial;
 	display: block;
@@ -385,6 +399,11 @@ textarea {
 	resize:  none;
 }
 
+textarea:focus {
+	border-color: #719ECE;
+    box-shadow: 0 0 10px #719ECE;
+}
+
 input[type="submit"] {
   width: 140px;
   height: 40px;
@@ -398,6 +417,17 @@ input[type="submit"] {
   font-size: 16px;
   font-weight: 700;
   color: #445162;
+}
+
+input[type="submit"]:hover {
+	cursor: pointer;
+	background-color: #d6d6d6;
+}
+
+input[type="submit"]:active {
+	background-color: #fff;
+	border-color: #719ECE;
+    box-shadow: 0 0 10px #719ECE;
 }
 
 .contacts {
