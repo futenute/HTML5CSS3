@@ -359,9 +359,13 @@ figure {
 	text-align: center;
 }
 
+.form-contacts-container {
+	display: flex;
+	justify-content: center;
+}
+
 .footer-form {
 	width: 520px;
-	margin: 0 auto;
 
 }
 
@@ -431,5 +435,93 @@ input[type="submit"]:active {
 }
 
 .contacts {
-	display: none;
+	width: 250px;
+	margin: 0 0 0 30px;
+}
+
+.contacts-list {
+	padding: 0;
+}
+
+.contacts-list-item {
+	list-style-type: none;
+	display: block;
+	margin: 0 0 29px 0;
+	padding: 0 0 0 30px;
+	color: #fff;
+	font-size: 16px;
+	position: relative;
+
+}
+
+.contacts-list-item::before {
+  content: "";
+  display: block;
+  width: 24px;
+  height: 24px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: -4px;
+  left: 0;
+}
+
+.contacts-list-item:nth-of-type(1):before {
+	background-image: url(../img/skype_icon.png);
+}
+
+.contacts-list-item:nth-of-type(2):before {
+	background-image: url(../img/icq_icon.png);
+}
+
+.contacts-list-item:nth-of-type(3):before {
+	background-image: url(../img/email_icon.png);
+}
+
+.contacts-list-item:nth-of-type(4):before {
+	background-image: url(../img/phone_icon.png);
+}
+
+.socials {
+	display: flex;
+	justify-content: space-between;
+	margin: 40px 0 0 0;
+}
+
+.socials-item {
+	display: block;
+	width: 42px;
+	height: 42px;
+	background-image: url('../img/social_buttons.png');
+}
+
+.socials-item:nth-child(1) {
+  background-position: -1px 0;
+}
+
+.socials-item:nth-child(2) {
+  background-position: -50px 0;
+}
+
+.socials-item:nth-child(3) {
+  background-position: -99px 0;
+}
+
+.socials-item:nth-child(4) {
+  background-position: -149px 0;
+}
+
+.socials-item:nth-child(5) {
+  background-position: -198px 0;
+}
+
+.copyright {
+	padding: 7px;
+	width: 100%;
+	text-align: center;
+	color: #445162;
+	font-size: 12px;
+	background-color: #f5f5f5;
+
 }
